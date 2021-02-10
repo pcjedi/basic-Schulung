@@ -1,1 +1,13 @@
+name: gitschulung
+on: 
+  workflow_dispatch:
 
+jobs:
+ build:
+  name: My firts Action
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - uses: ./action-a
+      with:
+        MY_NAME: Georg
